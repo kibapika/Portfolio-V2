@@ -19,3 +19,27 @@ code {
 html {
   scroll-behavior: smooth;
 }
+
+/* SideBtn */
+.btn {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.btn a {
+  display: block;
+  text-align: center;
+  padding: 26px;
+  transition: all 0.3s ease;
+  color: #C9ADA7;
+  font-size: 26px;
+}
+
+.btn a:hover{
+  color: #FCA311;
+  transform: translateY(-0.20em);
+}

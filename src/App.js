@@ -14,30 +14,34 @@ import Exp from "./components/Exp";
 import Tech from "./components/Tech";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import SideBtn from "./components/SideBtn";
 import STA from "./components/STA";
 
 function App() {
   return (
     <Router>
-      <div className="h-[100dvh] w-[100dvw] flex flex-col justify-between">
+      <div className="w-[100dvw] flex flex-col justify-between">
         <STA />
-        <Header />
-        <section>
-          <Home id="home" />
+        <section id="home">
+          <Header />
         </section>
-        <section id="about">
+        <SideBtn />
+        <section className="h-[85dvh]">
+          <Home />
+        </section>
+        <section id="about" className="h-[100dvh]">
           <About />
         </section>
-        <section id="exp">
+        <section id="exp" className="h-[100dvh]">
           <Exp />
         </section>
-        <section id="tech">
+        <section id="tech" className="h-[100dvh]">
           <Tech />
         </section>
-        <section id="projects">
+        <section id="projects" className="h-[100dvh]">
           <Projects />
         </section>
-        <section id="contact">
+        <section id="contact" className="h-[90dvh]">
           <Contact />
         </section>
         <Footer />

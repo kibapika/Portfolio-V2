@@ -3,7 +3,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="h-[9%] min-h-[9%] flex flex-row justify-around sm:justify-between content-center items-center text-[#b1a7a6] sm:mx-24">
+    <div className="h-[9%] min-h-[9%] flex flex-row justify-around sm:justify-between content-center items-center text-[#b1a7a6] my-4 sm:mx-24">
       <a
         href="https://github.com/kibapika/Portfolio-V2"
         rel="noreferrer"

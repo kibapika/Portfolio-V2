@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   BsHouse,
   BsPersonCircle,
@@ -6,12 +6,39 @@ import {
   BsCpu,
   BsEasel2,
   BsEnvelope,
+  BsArrowUp
 } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const SideNav = () => {
   const desktopScreen = useMediaQuery("(min-width: 640px)");
+
+  const [showButton, setShowButton] = useState(false);
+
+  const handleScroll = () => {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+
+  const backToTop = () => {
+    document.documentElement.style.scrollBehavior = "smooth";
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="sideNav mr-10">
@@ -36,7 +63,22 @@ const SideNav = () => {
             <BsEnvelope />
           </NavLink>
         </div>
-      ) : null}
+      ) : (
+        <div>
+          <button
+            type="button"
+            onClick={backToTop}
+            className={` ${
+              showButton ? `inline-block` : `hidden`
+            } fixed bottom-[40px] right-[40px] p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out`}
+          >
+            <BsArrowUp
+              aria-hidden="true"
+              className="w-4 h-4"
+            />
+          </button>
+        </div>
+      )}
     </div>
   );
 };

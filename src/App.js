@@ -18,6 +18,7 @@ import SideNav from "./components/SideNav";
 import STA from "./components/STA";
 
 function App() {
+
   return (
     <Router>
       <div className="w-[100dvw] flex flex-col justify-between">

@@ -14,7 +14,7 @@ import Exp from "./components/Exp";
 import Tech from "./components/Tech";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import SideBtn from "./components/SideBtn";
+import SideNav from "./components/SideNav";
 import STA from "./components/STA";
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
         <section id="home">
           <Header />
         </section>
-        <SideBtn />
+        <SideNav />
         <section className="h-[85dvh]">
           <Home />
         </section>

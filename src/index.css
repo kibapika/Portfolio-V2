@@ -20,8 +20,8 @@ html {
   scroll-behavior: smooth;
 }
 
-/* SideBtn */
-.btn {
+/* SideNav */
+.sideNav {
   position: fixed;
   top: 50%;
   right: 0;
@@ -30,7 +30,7 @@ html {
   transform: translateY(-50%);
 }
 
-.btn a {
+.sideNav a {
   display: block;
   text-align: center;
   padding: 26px;
@@ -39,7 +39,7 @@ html {
   font-size: 26px;
 }
 
-.btn a:hover{
+.sideNav a:hover{
   color: #FCA311;
   transform: translateY(-0.20em);
 }

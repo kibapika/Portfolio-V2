@@ -48,11 +48,10 @@ function App() {
         <Footer />
       </div>
       {/* <Routes>
-        <Route path="/" component={Home} />
-        <Route path="/home" component={Home}  />
-        <Route path="/about" component={About}  />
+        <Route path="/#home" element={<Header />} />
+        <Route path="/#about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
+        <Route path="/tech" element={<Tech />} />
         <Route path="/experience" element={<Exp />} />
       </Routes> */}
     </Router>

@@ -43,3 +43,7 @@ html {
   color: #d08c60;
   transform: translateY(-0.2em);
 }
+
+.sideNav a:focus {
+  color: #d08c60;
+}

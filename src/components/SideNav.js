@@ -6,7 +6,7 @@ import {
   BsCpu,
   BsEasel2,
   BsEnvelope,
-  BsArrowUp
+  BsArrowUp,
 } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -41,7 +41,7 @@ const SideNav = () => {
   }, []);
 
   return (
-    <div >
+    <div>
       {desktopScreen ? (
         <div className="sideNav mr-10">
           <NavLink to="/#home">
@@ -70,11 +70,14 @@ const SideNav = () => {
             onClick={backToTop}
             className={` ${
               showButton ? `inline-block` : `hidden`
-            } fixed bottom-[50px] right-[25px] p-4 bg-red-600 text-white rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out`}
+            } fixed bottom-[50px] right-[25px] p-4 bg-[#997b66] text-white rounded-full shadow-md hover:bg-[#997b66] hover:shadow-lg focus:bg-[#997b66] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#a5a58d] active:shadow-lg transition duration-150 ease-in-out`}
           >
             <BsArrowUp
               aria-hidden="true"
-              className="w-6 h-6"absolute bottom-0 right-0
+              className="w-6 h-6"
+              absolute
+              bottom-0
+              right-0
             />
           </button>
         </div>

@@ -32,7 +32,7 @@ const TopNav = () => {
         <Menu as="div" className="relative inline-block text-left">
           <div>
             <Menu.Button className="inline-flex w-full justify-center gap-x-1.8 rounded-md bg-white px-3 py-3 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-              <BsJustify className="h-6 w-6" aria-hidden="true" />
+              <BsJustify className="h-6 w-6 text-[#686763]" aria-hidden="true" />
             </Menu.Button>
           </div>
 

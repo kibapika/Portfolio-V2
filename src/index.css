@@ -20,6 +20,29 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Contact Form */
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus{
+  outline: none;
+  border-color: #d08c60;
+  transition: 200ms;
+  opacity: 0.6;
+}
+
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+textarea:focus{
+  outline: none;
+  border-color: #d08c60;
+  transition: 200ms;
+  opacity: 0.6;
+}
+
 /* SideNav */
 .sideNav {
   position: fixed;

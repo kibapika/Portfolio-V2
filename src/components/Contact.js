@@ -25,7 +25,7 @@ const Contact = () => {
         className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-[75%] sm:w-[55%]"
       >
         <label>Your Name</label>
-        {desktopScreen ? <label>E-mail Address</label> : null}
+        {desktopScreen ? <label>Your E-mail Address</label> : null}
         <input
           type="text"
           name="name"
@@ -34,7 +34,7 @@ const Contact = () => {
           placeholder="Enter your name"
           className="text-lg bg-transparent border-b-2 h-[2.5rem]"
         />
-        {desktopScreen ? null : <label>E-mail Address</label>}
+        {desktopScreen ? null : <label>Your E-mail Address</label>}
         <input
           type="text"
           name="email"

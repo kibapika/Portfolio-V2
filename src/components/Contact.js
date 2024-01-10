@@ -1,5 +1,6 @@
 import React from "react";
 import { RiMailSendLine } from "react-icons/ri";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 const Contact = () => {
   return (
@@ -23,6 +24,7 @@ const Contact = () => {
           type="text"
           name="name"
           id="name"
+          required
           placeholder="Enter your name"
           className="text-lg bg-transparent border-b-2 h-[2.5rem]"
         />
@@ -30,6 +32,7 @@ const Contact = () => {
           type="text"
           name="email"
           id="email"
+          required
           placeholder="Enter your e-mail"
           className="text-lg bg-transparent border-b-2 h-[2.5rem]"
         />
@@ -37,6 +40,7 @@ const Contact = () => {
         <section className="col-span-2">
           <textarea
             name="comments"
+            required
             rows="2"
             placeholder="Hi Eva, I am from X Company looking for a software engineeer. We would love to discuss a great opportunity with you!"
             className="w-[100%] h-[4rem] text-lg bg-transparent border-b-2"
@@ -48,10 +52,16 @@ const Contact = () => {
               type="submit"
               name="submit"
               value="Send"
-              className="w-[33%] h-[3.5rem] inline-block after:duration-1000 ease-out after:block after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#d08c60] after:opacity-60 after:transition-transform after:hover:origin-bottom-left after:hover:scale-x-100"
+              className="relative inline-flex items-center justify-center px-1 py-3 overflow-hidden transition duration-[400ms] ease-out border-2 border-[#d08c60] border-opacity-60 rounded-full shadow-lg group"
             >
-              <span className="pr-3">Send!</span>
-              <RiMailSendLine />
+              <span className="absolute inset-0 flex items-center justify-center w-full h-full rounded-full text-white duration-[400ms] -translate-x-full bg-[#a2a392] group-hover:translate-x-0 ease">
+                <HiArrowLongRight className="text-[2.75rem]" />
+              </span>
+              <div class="absolute flex items-center justify-center w-full h-full transition-all duration-[400ms] transform group-hover:translate-x-full ease">
+                <span className="pr-3 pb-1">Send!</span>
+                <RiMailSendLine />
+              </div>
+              <span className="relative invisible">Button Text</span>
             </button>
           </div>
         </section>

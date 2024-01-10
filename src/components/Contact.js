@@ -1,5 +1,5 @@
 import React from "react";
-import { BsSend } from "react-icons/bs";
+import { RiMailSendLine } from "react-icons/ri";
 
 const Contact = () => {
   return (
@@ -42,16 +42,18 @@ const Contact = () => {
             className="w-[100%] h-[4rem] text-lg bg-transparent border-b-2"
           />
         </section>
-        <section className="w-[100%] items-center col-span-2 text-xl">
-          <button
-            type="submit"
-            name="submit"
-            value="Send"
-            className="flex flex-row items-center border-2"
-          >
-            <span>Send!</span>
-            <BsSend />
-          </button>
+        <section className="col-span-2 text-[1.4rem]">
+          <div className="w-[100%] flex justify-center">
+            <button
+              type="submit"
+              name="submit"
+              value="Send"
+              className="w-[33%] h-[3.5rem] inline-block after:duration-1000 ease-out after:block after:h-0.5 after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#d08c60] after:opacity-60 after:transition-transform after:hover:origin-bottom-left after:hover:scale-x-100"
+            >
+              <span className="pr-3">Send!</span>
+              <RiMailSendLine />
+            </button>
+          </div>
         </section>
       </form>
     </div>

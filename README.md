@@ -6,6 +6,9 @@
 - #997b66
 - #a5a58d
 - #6b705c
+- #4d4a48
+- #2b2929
+- #972b1a
 
 
 # Getting Started with Create React App

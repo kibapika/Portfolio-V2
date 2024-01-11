@@ -25,7 +25,7 @@ input:focus::placeholder {
   color: transparent;
 }
 
-input:focus{
+input:focus {
   outline: none;
   border-color: #d08c60;
   transition: 200ms;
@@ -36,7 +36,7 @@ textarea:focus::placeholder {
   color: transparent;
 }
 
-textarea:focus{
+textarea:focus {
   outline: none;
   border-color: #d08c60;
   transition: 200ms;

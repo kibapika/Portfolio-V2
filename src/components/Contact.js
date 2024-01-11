@@ -21,7 +21,7 @@ const Contact = () => {
       <form
         action="mailto:evali3101@gmail.com"
         method="get"
-        enctype="text/plain"
+        encType="application/x-www-form-urlencoded"
         className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-[75%] sm:w-[55%]"
       >
         <label>Your Name</label>
@@ -64,7 +64,7 @@ const Contact = () => {
               <span className="absolute inset-0 flex items-center justify-center w-full h-full rounded-full text-white duration-[400ms] -translate-x-full bg-[#a2a392] group-hover:translate-x-0 ease">
                 <HiArrowLongRight className="text-[2.75rem]" />
               </span>
-              <div class="absolute flex items-center justify-center w-full h-full transition-all duration-[400ms] transform group-hover:translate-x-full ease">
+              <div className="absolute flex items-center justify-center w-full h-full transition-all duration-[400ms] transform group-hover:translate-x-full ease">
                 <span className="pr-3 pb-1">Send!</span>
                 <RiMailSendLine />
               </div>

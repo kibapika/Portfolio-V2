@@ -15,8 +15,35 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SideNav from "./components/SideNav";
 import STA from "./components/STA";
-
 import blueStack from "./img/bluestack.jpg";
+
+function fadeOutOnScroll(element) {
+  if (!element || element.length === 0) {
+    return;
+  }
+
+  var distanceToTop = window.pageYOffset + element[0].getBoundingClientRect().top;
+  var elementHeight = element[0].offsetHeight;
+  var scrollTop = document.documentElement.scrollTop;
+
+  var opacity = 1;
+
+  if (scrollTop > distanceToTop) {
+    opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+  }
+
+  if (opacity >= 0) {
+    element[0].style.opacity = opacity;
+  }
+}
+
+function scrollHandler() {
+  var header = document.getElementsByClassName("background");
+  fadeOutOnScroll(header);
+}
+
+window.addEventListener("scroll", scrollHandler);
+
 
 function App() {
   return (
@@ -26,7 +53,7 @@ function App() {
         <SideNav />
         <section
           id="home"
-          className="h-[100dvh] justify-center bg-no-repeat bg-cover bg-center"
+          className="background h-[100dvh] justify-center bg-no-repeat bg-cover bg-center"
           style={{ backgroundImage: `url(${blueStack})` }}
         >
           <Header />

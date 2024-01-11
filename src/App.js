@@ -7,7 +7,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Exp from "./components/Exp";
@@ -25,18 +24,13 @@ function App() {
       <div className="w-[100dvw] flex flex-col justify-between">
         <STA />
         <SideNav />
-        <div
+        <section
           id="home"
-          className="justify-center bg-no-repeat bg-cover bg-center"
+          className="h-[100dvh] justify-center bg-no-repeat bg-cover bg-center"
           style={{ backgroundImage: `url(${blueStack})` }}
         >
-          <section>
-            <Header />
-          </section>
-          <section className="h-[86dvh]">
-            <Home />
-          </section>
-        </div>
+          <Header />
+        </section>
         <section id="about" className="h-[100dvh]">
           <About />
         </section>

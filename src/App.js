@@ -17,19 +17,26 @@ import Footer from "./components/Footer";
 import SideNav from "./components/SideNav";
 import STA from "./components/STA";
 
-function App() {
+import blueStack from "./img/bluestack.jpg";
 
+function App() {
   return (
     <Router>
       <div className="w-[100dvw] flex flex-col justify-between">
         <STA />
-        <section id="home">
-          <Header />
-        </section>
         <SideNav />
-        <section className="h-[85dvh]">
-          <Home />
-        </section>
+        <div
+          id="home"
+          className="justify-center bg-no-repeat bg-cover bg-center"
+          style={{ backgroundImage: `url(${blueStack})` }}
+        >
+          <section>
+            <Header />
+          </section>
+          <section className="h-[86dvh]">
+            <Home />
+          </section>
+        </div>
         <section id="about" className="h-[100dvh]">
           <About />
         </section>

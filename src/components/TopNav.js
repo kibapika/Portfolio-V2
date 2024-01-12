@@ -36,16 +36,16 @@ const TopNav = () => {
         <div className="w-[8rem] flex flex-row justify-between">
           <div className="text-[1.1rem]">
             <a href={resume}>
-              <button className="border-2 text-[2rem] rounded-md px-3 py-1.5 flex flex-row justify-evenly items-center cursor-point hover:bg-[#FCA311] hover:border-[#6b705c] hover:text-[#6b705c] hover:bg-opacity-15 hover:duration-200">
+              <button className="border-2 text-[2rem] rounded-md px-3 py-1.5 flex flex-row justify-evenly items-center bg-[#f5f4ef] cursor-point text-[#4d4a48] hover:bg-[#FCA311] hover:border-[#6b705c] hover:text-[#6b705c] hover:bg-opacity-15 hover:duration-200">
                 <BsFileEarmarkText />
               </button>
             </a>
           </div>
           <Menu as="div" className="relative inline-block text-left">
             <div>
-              <Menu.Button className="inline-flex w-full justify-center gap-x-1.8 rounded-md bg-white px-3 py-3 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+              <Menu.Button className="inline-flex w-full justify-center gap-x-1.8 rounded-md bg-[#f5f4ef] px-3 py-3 shadow-sm ring-1 ring-inset ring-gray-300">
                 <BsJustify
-                  className="h-6 w-6 text-[#686763]"
+                  className="h-6 w-6 text-[#4d4a48] font-bold "
                   aria-hidden="true"
                 />
               </Menu.Button>
@@ -60,7 +60,7 @@ const TopNav = () => {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className="absolute right-0 z-10 mt-2 w-[11.5rem] origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <Menu.Items className="absolute right-0 z-10 mt-2 w-[11.5rem] origin-top-right rounded-md bg-[#f5f4ef] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="py-1">
                   <Menu.Item>
                     {({ active }) => (

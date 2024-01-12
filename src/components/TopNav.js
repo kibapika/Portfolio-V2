@@ -26,7 +26,7 @@ const TopNav = () => {
       {desktopScreen ? (
         <div className="text-[1.1rem]">
           <a href={resume}>
-            <button className="w-[8rem] border-2 rounded-md px-3 py-1.5 flex flex-row justify-evenly items-center cursor-point hover:bg-[#FCA311] hover:border-[#6b705c] hover:text-[#6b705c] hover:bg-opacity-15 hover:duration-20 hover:font-bold">
+            <button className="w-[8rem] border-2 rounded-md px-3 py-1.5 flex flex-row justify-evenly items-center cursor-point hover:bg-[#a2a392] hover:border-[#4d4a48] hover:text-[#4d4a48] hover:bg-opacity-65 hover:duration-20 hover:font-bold">
               <BsFileEarmarkText />
               <span>Resume</span>
             </button>

@@ -22,7 +22,8 @@ function fadeOutOnScroll(element) {
     return;
   }
 
-  var distanceToTop = window.pageYOffset + element[0].getBoundingClientRect().top;
+  var distanceToTop =
+    window.pageYOffset + element[0].getBoundingClientRect().top;
   var elementHeight = element[0].offsetHeight;
   var scrollTop = document.documentElement.scrollTop;
 
@@ -44,13 +45,12 @@ function scrollHandler() {
 
 window.addEventListener("scroll", scrollHandler);
 
-
 function App() {
   return (
     <Router>
       <div className="w-[100dvw] flex flex-col justify-between">
         <STA />
-        <SideNav />
+
         <section
           id="home"
           className="background h-[100dvh] justify-center bg-no-repeat bg-cover bg-center"
@@ -58,6 +58,7 @@ function App() {
         >
           <Header />
         </section>
+        <SideNav />
         <section id="about" className="h-[100dvh]">
           <About />
         </section>

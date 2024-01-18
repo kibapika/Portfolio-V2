@@ -50,7 +50,7 @@ const Contact = () => {
             required
             rows="2"
             placeholder="Hi Eva, I am from X Company looking for a software engineeer. We would love to discuss a great opportunity with you!"
-            className="w-[100%] h-[4rem] text-lg bg-transparent border-b-2"
+            className="w-[100%] h-[4rem] text-lg bg-transparent border-b-2 resize-y"
           />
         </section>
         <section className="sm:col-span-2 text-[1.4rem]">

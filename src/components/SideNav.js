@@ -70,7 +70,7 @@ const SideNav = () => {
             onClick={backToTop}
             className={` ${
               showButton ? `inline-block` : `hidden`
-            } fixed bottom-[55px] right-[25px] p-4 bg-[#997b66] text-white rounded-full shadow-md hover:bg-[#997b66] hover:shadow-lg focus:bg-[#997b66] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#a5a58d] active:shadow-lg transition duration-150 ease-in-out`}
+            } fixed bottom-[55px] right-[25px] p-4 bg-[#997b66] text-white rounded-full shadow-md hover:bg-[#997b66] hover:shadow-lg focus:bg-[#997b66] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#a5a58d] active:shadow-lg transition duration-150 ease-in-out animate-bounce`}
           >
             <BsArrowUp
               aria-hidden="true"

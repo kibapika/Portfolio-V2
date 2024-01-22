@@ -24,7 +24,7 @@ const About = () => {
             Prior to this role, I was a Registered Dietitian (RD) and still have
             my credentials. I decided to make this career change because of my
             curiosity of the ever growing and evolving world of technology. I
-            wanted to challenge myself to be able to learn the in's and out's of
+            wanted to challenge myself tso be able to learn the in's and out's of
             it to better use/understand it to eventually use my skills to
             help/aid peoples endevour. Technology was helpful and key part of my
             practice as a dietitian and I hope to become a full-fledged Software

@@ -6,7 +6,7 @@ const About = () => {
     <div className="h-[100%] flex justify-center items-center">
       <div className="aboutBG h-[95%] w-[90%] sm:h-[88%] sm:w-[75%] flex flex-col sm:flex-row justify-evenly sm:justify-center bg-white bg-opacity-65 rounded-3xl items-center">
         <section className="w-[75%] sm:w-[50%] flex justify-center">
-          <div className="w-[70%] sm:w-[65%] flex flex-col justify-center rounded-t-full items-center outline outline-offset-2 outline-4 drop-shadow-xl">
+          <div className="facePic w-[70%] sm:w-[65%] flex flex-col justify-center rounded-t-full items-center outline outline-offset-2 outline-4 drop-shadow-xl">
             <img alt="facePic" src={facePic} className="rounded-t-full" />
             <div className="w-full h-[3rem] bg-[#687351] flex justify-center items-center text-[#f5f4ef] font-bold text-center">
               <span>"Nice to meet you!"</span>

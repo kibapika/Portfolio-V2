@@ -62,6 +62,12 @@ html {
   }
  }
 
+ @media (max-width: 375px) {
+  .facePic {
+    width: 45%;
+  }
+ }
+
 /* Contact Form */
 input:focus::placeholder {
   color: transparent;

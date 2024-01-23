@@ -14,7 +14,7 @@ const About = () => {
           </div>
         </section>
         <section className="w-[85%] sm:w-[50%] text-center sm:text-start">
-          <h1 className="text-2xl sm:text-5xl sm:mb-6 text-[#4d4a48] mb-2 sm:mb-0">My Journey.</h1>
+          <h1 className="text-2xl sm:text-5xl sm:mb-6 text-[#4d4a48] mb-2 sm:mb-0 font-bold">My Journey.</h1>
           <p className="sm:w-[85%] text-sm sm:text-base">
             I am a graduate from Fullstack Academy and became a Software
             Engineer by honing my skills in Javascript, React, HTML, etc. I

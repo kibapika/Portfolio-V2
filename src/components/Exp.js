@@ -14,8 +14,8 @@ export default function Exp() {
 
   return (
     <div className="h-full flex justify-center items-center">
-      <div className="w-[65%]">
-        <h1 className="w-full text-start text-5xl mb-4">
+      <div className="w-[88%] sm:w-[72%]">
+        <h1 className="w-full text-center sm:text-start text-2xl sm:text-4xl mb-6 text-[#4d4a48] font-bold">
           Professional Experience
         </h1>
         <section>
@@ -27,23 +27,25 @@ export default function Exp() {
               expandIcon={<BsChevronDown />}
               aria-controls="panel1bh-content"
               id="panel1bh-header"
+              className="sm:h-[3.25rem]"
+              sx={{backgroundColor:"#dfddca"}}
             >
-              <Typography className="w-[80%]">
+              <Typography className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start" sx={{ fontSize: {md:"1.125rem"}, lineHeight: "1.75rem" }}>
                 Student | Fullstack Academy
               </Typography>
-              <Typography sx={{ color: "text.secondary" }}>
+              <Typography sx={{ color: "text.secondary", lineHeight: "1.75rem" }}>
                 2022 - 2023
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                ▷ Intensive 19-weeks immersive software engineering coding
+              <Typography className="text-[#4d4a48]" sx={{fontSize:"0.90rem"}}>
+              ○ Intensive 19-weeks immersive software engineering coding
                 bootcamp
                 <br></br>
-                <br></br>▷ Hands-on learning with daily projects and
+                <br></br>○ Hands-on learning with daily projects and
                 pair-programming
                 <br></br>
-                <br></br>▷ Focused on front-end and back-end web-development
+                <br></br>○ Focused on front-end and back-end web-development
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -55,19 +57,33 @@ export default function Exp() {
               expandIcon={<BsChevronDown />}
               aria-controls="panel2bh-content"
               id="panel2bh-header"
+              className="sm:h-[3.25rem]"
+              sx={{backgroundColor:"#b7bd9e"}}
             >
-              <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                Users
+              <Typography className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start" sx={{ fontSize: {md:"1.125rem"}, lineHeight: "1.75rem" }}>
+                Registered Dietitian | Family Residences and Essential
+                Enterprises, Inc.
               </Typography>
-              <Typography sx={{ color: "text.secondary" }}>
-                You are currently not an owner
+              <Typography sx={{ color: "text.secondary", lineHeight: "1.75rem" }}>
+                2021 - 2022
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Donec placerat, lectus sed mattis semper, neque lectus feugiat
-                lectus, varius pulvinar diam eros in elit. Pellentesque
-                convallis laoreet laoreet.
+              <Typography className="text-[#4d4a48]" sx={{fontSize:"0.90rem"}}>>
+              ○ Traveled to 50+group homes throughout New York to provide
+                outpatient care to approximately 12 individuals with special
+                needs per week
+                <br></br>
+                <br></br>○ Reviewed charts in order to conduct outpatient visits
+                based on patient specific nutrition needs
+                <br></br>
+                <br></br>○ Conducted in-service and nutrition demos (e.g
+                diabetic dietary guidelines, food safety) to nurses, behavioral
+                specialists, and individuals based on their nutritional needs
+                and concerns
+                <br></br>
+                <br></br>○ Managed schedule to coordinate care alongside nurses
+                and supervisor for individuals
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -79,40 +95,34 @@ export default function Exp() {
               expandIcon={<BsChevronDown />}
               aria-controls="panel3bh-content"
               id="panel3bh-header"
+              className="sm:h-[3.25rem]"
+              sx={{backgroundColor:"#798a6e"}}
             >
-              <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                Advanced settings
+              <Typography className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start" sx={{ fontSize: {md:"1.125rem"}, lineHeight: "1.75rem" }}>
+                Registered Dietitian | The Pavilion at Queens for Rehabilitation
+                & Nursing
               </Typography>
-              <Typography sx={{ color: "text.secondary" }}>
-                Filtering has been entirely disabled for whole web server
+              <Typography sx={{ color: "text.secondary", lineHeight: "1.75rem" }}>
+                2020 - 2021
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion
-            expanded={expanded === "panel4"}
-            onChange={handleChange("panel4")}
-          >
-            <AccordionSummary
-              expandIcon={<BsChevronDown />}
-              aria-controls="panel4bh-content"
-              id="panel4bh-header"
-            >
-              <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                Personal data
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                Integer sit amet egestas eros, vitae egestas augue. Duis vel est
-                augue.
+              <Typography className="text-[#4d4a48]" sx={{fontSize:"0.90rem"}}>
+              ○ Reviewed and monitored 90+ residents’ nutritional status,
+                prescribed therapeutic diets, and developed care plans within
+                the long-term nursing and short-term rehabilitation settings
+                <br></br>
+                <br></br>○ Oversaw the tracheostomy and ventilator floors
+                specializing in tube feedings (40+ resident’s) in addition to
+                general residents’ floors
+                <br></br>
+                <br></br>○ Mentored dietetic interns from multiple programs
+                <br></br>
+                <br></br>○ Attended family care plan meeting bi-weekly to
+                discuss residents’ progress
+                <br></br>
+                <br></br>○ Maintained GeriMenu systems for menu management and
+                nutritional data
               </Typography>
             </AccordionDetails>
           </Accordion>

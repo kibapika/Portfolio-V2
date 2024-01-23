@@ -6,8 +6,8 @@ import js from "../png/js.png";
 import node from "../png/node.png";
 import psql from "../png/psql.png";
 import react from "../png/react.png";
-import sql from "../png/squelize.png";
-import tail from "../png/tailwind.png";
+import sql from "../png/sequelize.png";
+import tail from "../png/tailwind.svg";
 
 export const techDetails = {
  0: {

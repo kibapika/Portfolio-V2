@@ -114,7 +114,7 @@ const TopNav = () => {
                         )}
                       >
                         <BsCpu className="mr-3" />
-                        Technologies
+                        Skills
                       </NavLink>
                     )}
                   </Menu.Item>

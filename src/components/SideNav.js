@@ -43,7 +43,7 @@ const SideNav = () => {
   return (
     <div>
       {desktopScreen ? (
-        <div className="sideNav mr-10">
+        <div className="sideNav mr-8">
           <NavLink to="/#home">
             <BsHouse />
           </NavLink>

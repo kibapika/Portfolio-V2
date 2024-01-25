@@ -14,7 +14,7 @@ export default function Exp() {
 
   return (
     <div className="h-full flex justify-center items-center">
-      <div className="w-[88%] sm:w-[72%]">
+      <div className="w-[88%] sm:w-[75%]">
         <h1 className="w-full text-center sm:text-start text-2xl sm:text-4xl mb-6 text-[#4d4a48] font-bold">
           Professional Experience
         </h1>
@@ -69,7 +69,7 @@ export default function Exp() {
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography className="text-[#4d4a48]" sx={{fontSize:"0.90rem"}}>>
+              <Typography className="text-[#4d4a48]" sx={{fontSize:"0.90rem"}}>
               ○ Traveled to 50+group homes throughout New York to provide
                 outpatient care to approximately 12 individuals with special
                 needs per week

@@ -50,7 +50,6 @@ function App() {
     <Router>
       <div className="w-[100dvw] flex flex-col justify-between">
         <STA />
-
         <section
           id="home"
           className="background h-[100dvh] justify-center bg-no-repeat bg-cover bg-center"

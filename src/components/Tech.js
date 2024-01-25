@@ -4,14 +4,16 @@ import TechFxn from "./techFxn";
 
 export default function Tech() {
   return (
-    <div className="h-full flex flex-col justify-start items-center">
-      <section className="w-[76%] h-[25%] flex items-center text-center sm:text-start">
-        <h1 className="text-2xl sm:text-4xl text-[#4d4a48] font-bold">
-          Technologies I've used...
+    <div className="h-full flex flex-col justify-center items-center">
+      <section className="w-[75%] h-[15%] flex flex-col justify-evenly items-center">
+        <h1 className="w-full text-2xl sm:text-4xl text-[#4d4a48] font-bold text-center sm:text-end">
+          Skills
         </h1>
+        <p className="w-full text-base font-bold text-center sm:text-end">
+          Here are some of the technology I have used in my projects.
+        </p>
       </section>
-
-      <section className="h-[75%] flex flex-col justify-evenly">
+      <section className="w-[75%] h-[75%] flex flex-col justify-evenly items-center">
         <div className="carousel-container">
           <div className="carousel-track">
             {Object.keys(techDetails).map((detailKey) => {
@@ -35,7 +37,7 @@ export default function Tech() {
           </div>
         </div>
         <div className="carousel-container">
-          <div className="carousel-track">
+          <div className="carousel-track1">
             {Object.keys(techDetail1).map((detailKey) => {
               return (
                 <TechFxn

@@ -40,7 +40,7 @@ export const techDetails = {
   6: {
     png: psql,
     title: "psql",
-  }
+  },
 };
 
 export const techDetail1 = {
@@ -58,14 +58,77 @@ export const techDetail1 = {
   },
   10: {
     png: boot,
-    title: "boot"
+    title: "boot",
   },
   11: {
     png: vercel,
-    title: "vervel"
+    title: "vervel",
   },
   12: {
     png: netlify,
-    title: "netlify"
+    title: "netlify",
+  }
+};
+
+// mobile data
+
+export const techDetailsMobile = {
+  13: {
+    png: css3,
+    title: "css3",
+  },
+  14: {
+    png: firebase,
+    title: "firebase",
+  },
+  15: {
+    png: github,
+    title: "github",
+  },
+  16: {
+    png: html,
+    title: "html",
+  },
+};
+
+export const techDetailsMobile1 = {
+  17: {
+    png: js,
+    title: "js",
+  },
+  18: {
+    png: node,
+    title: "node",
+  },
+  19: {
+    png: psql,
+    title: "psql",
+  },
+  20: {
+    png: react,
+    title: "react",
+  },
+  21: {
+    png: sql,
+    title: "sql",
+  }
+};
+
+export const techDetailsMobile2 = {
+  22: {
+    png: tail,
+    title: "tail",
+  },
+  23: {
+    png: boot,
+    title: "boot",
+  },
+  24: {
+    png: vercel,
+    title: "vervel",
+  },
+  25: {
+    png: netlify,
+    title: "netlify",
   }
 };

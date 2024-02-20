@@ -9,6 +9,9 @@ import Typography from "@mui/material/Typography";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import { projectDetails } from "./projectDetails";
+import Tech from "./Tech";
+
 export default function Projects() {
   const responsive = {
     desktop: {
@@ -54,106 +57,33 @@ export default function Projects() {
           containerClass="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile"]}
         >
-          <Card sx={{ maxWidth: 445 }}>
-            <CardMedia
-              sx={{ height: 240 }}
-              image="/static/images/cards/contemplative-reptile.jpg"
-              title="green iguana"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Lizard1
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Share</Button>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-          <Card sx={{ maxWidth: 445 }}>
-            <CardMedia
-              sx={{ height: 240 }}
-              image="/static/images/cards/contemplative-reptile.jpg"
-              title="green iguana"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Lizard2
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Share</Button>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-          <Card sx={{ maxWidth: 445 }}>
-            <CardMedia
-              sx={{ height: 240 }}
-              image="/static/images/cards/contemplative-reptile.jpg"
-              title="green iguana"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Lizard3
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Share</Button>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-          <Card sx={{ maxWidth: 445 }}>
-            <CardMedia
-              sx={{ height: 240 }}
-              image="/static/images/cards/contemplative-reptile.jpg"
-              title="green iguana"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Lizard4
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Share</Button>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-          <Card sx={{ maxWidth: 445 }}>
-            <CardMedia
-              sx={{ height: 240 }}
-              image="/static/images/cards/contemplative-reptile.jpg"
-              title="green iguana"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Lizard5
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Share</Button>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
+          {projectDetails.map((details) => (
+            <Card sx={{ maxWidth: 445 }} key={details.title}>
+              <CardMedia
+                sx={{ height: 240 }}
+                image={details.png}
+                title={details.title}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {details.title}
+                </Typography>
+                <Typography variant="body2">{details.desc}</Typography>
+                {/* {details.tech.map((tech) => (
+                  <Typography sx={{ mt: 1.5 }} color="text.secondary">
+                    {tech}
+                  </Typography>
+                ))} */}
+                <Typography sx={{ mt: 1.5 }} color="text.secondary">
+                  {details.tech}
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Share</Button>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+          ))}
         </Carousel>
       </section>
     </div>

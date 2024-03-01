@@ -29,7 +29,13 @@ export default function Projects() {
   };
 
   return (
-    <div className="h-full flex justify-center items center">
+    <div className="h-full flex flex-col justify-center items-center">
+      <section className="w-[78%] h-[18%] sm:h-[15%] flex flex-col justify-evenly items-center">
+        <h1 className="w-full text-3xl sm:text-4xl text-[#4d4a48] font-bold text-center sm:text-start">
+          Projects
+        </h1>
+      </section>
+
       <section className="w-[78%]">
         <Carousel
           additionalTransfrom={0}
@@ -58,7 +64,7 @@ export default function Projects() {
           removeArrowOnDeviceType={["tablet", "mobile"]}
         >
           {projectDetails.map((details) => (
-            <Card sx={{ maxWidth: 445 }} key={details.title}>
+            <Card sx={{ maxWidth: 455, height: 455 }} key={details.title}>
               <CardMedia
                 sx={{ height: 240 }}
                 image={details.png}
@@ -69,11 +75,6 @@ export default function Projects() {
                   {details.title}
                 </Typography>
                 <Typography variant="body2">{details.desc}</Typography>
-                {/* {details.tech.map((tech) => (
-                  <Typography sx={{ mt: 1.5 }} color="text.secondary">
-                    {tech}
-                  </Typography>
-                ))} */}
                 <Typography sx={{ mt: 1.5 }} color="text.secondary">
                   {details.tech}
                 </Typography>

@@ -5,12 +5,12 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import { projectDetails } from "./projectDetails";
-import Tech from "./Tech";
 
 export default function Projects() {
   const responsive = {
@@ -34,8 +34,11 @@ export default function Projects() {
         <h1 className="w-full text-3xl sm:text-4xl text-[#4d4a48] font-bold text-center sm:text-start">
           Projects
         </h1>
+        <p className="w-full text-lg sm:text-base font-bold text-center sm:text-start">
+          Here is a collection of projects that have done on my own or with a
+          team.
+        </p>
       </section>
-
       <section className="w-[78%]">
         <Carousel
           additionalTransfrom={0}
@@ -80,8 +83,12 @@ export default function Projects() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+                <Button href={details.git}>
+                  <FiGithub />
+                </Button>
+                <Button href={details.link}>
+                  <FiExternalLink />
+                </Button>
               </CardActions>
             </Card>
           ))}

@@ -30,7 +30,7 @@ export default function Projects() {
 
   return (
     <div className="h-full flex flex-col justify-center items-center">
-      <section className="w-[78%] h-[18%] sm:h-[15%] flex flex-col justify-evenly items-center">
+      <section className="w-[80%] sm:w-[75%] h-[16%] sm:h-[15%] flex flex-col justify-evenly items-center">
         <h1 className="w-full text-3xl sm:text-4xl text-[#4d4a48] font-bold text-center sm:text-start">
           Projects
         </h1>
@@ -39,7 +39,7 @@ export default function Projects() {
           team.
         </p>
       </section>
-      <section className="w-[78%]">
+      <section className="w-[90%] sm:h-[78%] sm:w-[75%]">
         <Carousel
           additionalTransfrom={0}
           arrows
@@ -67,9 +67,11 @@ export default function Projects() {
           removeArrowOnDeviceType={["tablet", "mobile"]}
         >
           {projectDetails.map((details) => (
-            <Card sx={{ maxWidth: 455, height: 455 }} key={details.title}>
+            <Card 
+            className="max-w-max h-[30rem] sm:h-[28rem]"
+            key={details.title}>
               <CardMedia
-                sx={{ height: 240 }}
+                className="h-[50%]"
                 image={details.png}
                 title={details.title}
               />
@@ -84,10 +86,10 @@ export default function Projects() {
               </CardContent>
               <CardActions>
                 <Button href={details.git}>
-                  <FiGithub />
+                  <FiGithub className="text-xl" />
                 </Button>
                 <Button href={details.link}>
-                  <FiExternalLink />
+                  <FiExternalLink className="text-xl" />
                 </Button>
               </CardActions>
             </Card>

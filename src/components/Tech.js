@@ -14,7 +14,7 @@ export default function Tech() {
 
   return (
     <div className="h-full flex flex-col justify-center items-center">
-      <section className="w-[75%] h-[18%] sm:h-[15%] flex flex-col justify-evenly items-center">
+      <section className="w-[75%] h-[16%] sm:h-[15%] flex flex-col justify-evenly items-center">
         <h1 className="w-full text-3xl sm:text-4xl text-[#4d4a48] font-bold text-center sm:text-end">
           Skills
         </h1>

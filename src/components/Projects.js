@@ -29,9 +29,9 @@ export default function Projects() {
   };
 
   return (
-    <div className="h-full flex flex-col justify-center items-center">
-      <section className="w-[80%] sm:w-[75%] h-[16%] sm:h-[15%] flex flex-col justify-evenly items-center">
-        <h1 className="w-full text-3xl sm:text-4xl text-[#4d4a48] font-bold text-center sm:text-start">
+    <div className="h-full flex flex-col sm:justify-center items-center">
+      <section className="w-[80%] sm:w-[75%] h-[20%] sm:h-[15%] flex flex-col justify-center sm:justify-evenly items-center">
+        <h1 className="w-full text-3xl sm:text-4xl text-[#4d4a48] font-bold text-center mb-4 sm:mb-0 sm:text-start">
           Projects
         </h1>
         <p className="w-full text-lg sm:text-base font-bold text-center sm:text-start">
@@ -67,11 +67,9 @@ export default function Projects() {
           removeArrowOnDeviceType={["tablet", "mobile"]}
         >
           {projectDetails.map((details) => (
-            <Card 
-            className="max-w-max h-[30rem] sm:h-[28rem]"
-            key={details.title}>
+            <Card className="w-full h-[37rem] sm:h-[28rem]" key={details.title}>
               <CardMedia
-                className="h-[50%]"
+                className="h-[30%] sm:h-[50%]"
                 image={details.png}
                 title={details.title}
               />

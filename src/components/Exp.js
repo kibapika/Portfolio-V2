@@ -1,9 +1,12 @@
 import * as React from "react";
+import { useEffect } from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import { BsChevronDown } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Exp() {
   const [expanded, setExpanded] = React.useState(false);
@@ -12,9 +15,18 @@ export default function Exp() {
     setExpanded(isExpanded ? panel : false);
   };
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="h-full flex justify-center items-center">
-      <div className="w-[88%] sm:w-[75%]">
+      <div
+        className="w-[88%] sm:w-[75%]"
+        data-aos="zoom-out"
+        data-aos-easing="linear"
+        data-aos-delay="300"
+      >
         <h1 className="w-full text-center sm:text-start text-2xl sm:text-4xl mb-6 text-[#4d4a48] font-bold">
           Professional Experience
         </h1>
@@ -28,18 +40,26 @@ export default function Exp() {
               aria-controls="panel1bh-content"
               id="panel1bh-header"
               className="sm:h-[3.25rem]"
-              sx={{backgroundColor:"#dfddca"}}
+              sx={{ backgroundColor: "#dfddca" }}
             >
-              <Typography className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start" sx={{ fontSize: {md:"1.125rem"}, lineHeight: "1.75rem" }}>
+              <Typography
+                className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start"
+                sx={{ fontSize: { md: "1.125rem" }, lineHeight: "1.75rem" }}
+              >
                 Student | Fullstack Academy
               </Typography>
-              <Typography sx={{ color: "text.secondary", lineHeight: "1.75rem" }}>
+              <Typography
+                sx={{ color: "text.secondary", lineHeight: "1.75rem" }}
+              >
                 2022 - 2023
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography className="text-[#4d4a48]" sx={{fontSize:"0.90rem"}}>
-              ○ Intensive 19-weeks immersive software engineering coding
+              <Typography
+                className="text-[#4d4a48]"
+                sx={{ fontSize: "0.90rem" }}
+              >
+                ○ Intensive 19-weeks immersive software engineering coding
                 bootcamp
                 <br></br>
                 <br></br>○ Hands-on learning with daily projects and
@@ -58,19 +78,27 @@ export default function Exp() {
               aria-controls="panel2bh-content"
               id="panel2bh-header"
               className="sm:h-[3.25rem]"
-              sx={{backgroundColor:"#b7bd9e"}}
+              sx={{ backgroundColor: "#b7bd9e" }}
             >
-              <Typography className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start" sx={{ fontSize: {md:"1.125rem"}, lineHeight: "1.75rem" }}>
+              <Typography
+                className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start"
+                sx={{ fontSize: { md: "1.125rem" }, lineHeight: "1.75rem" }}
+              >
                 Registered Dietitian | Family Residences and Essential
                 Enterprises, Inc.
               </Typography>
-              <Typography sx={{ color: "text.secondary", lineHeight: "1.75rem" }}>
+              <Typography
+                sx={{ color: "text.secondary", lineHeight: "1.75rem" }}
+              >
                 2021 - 2022
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography className="text-[#4d4a48]" sx={{fontSize:"0.90rem"}}>
-              ○ Traveled to 50+group homes throughout New York to provide
+              <Typography
+                className="text-[#4d4a48]"
+                sx={{ fontSize: "0.90rem" }}
+              >
+                ○ Traveled to 50+group homes throughout New York to provide
                 outpatient care to approximately 12 individuals with special
                 needs per week
                 <br></br>
@@ -96,19 +124,27 @@ export default function Exp() {
               aria-controls="panel3bh-content"
               id="panel3bh-header"
               className="sm:h-[3.25rem]"
-              sx={{backgroundColor:"#798a6e"}}
+              sx={{ backgroundColor: "#798a6e" }}
             >
-              <Typography className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start" sx={{ fontSize: {md:"1.125rem"}, lineHeight: "1.75rem" }}>
+              <Typography
+                className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start"
+                sx={{ fontSize: { md: "1.125rem" }, lineHeight: "1.75rem" }}
+              >
                 Registered Dietitian | The Pavilion at Queens for Rehabilitation
                 & Nursing
               </Typography>
-              <Typography sx={{ color: "text.secondary", lineHeight: "1.75rem" }}>
+              <Typography
+                sx={{ color: "text.secondary", lineHeight: "1.75rem" }}
+              >
                 2020 - 2021
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography className="text-[#4d4a48]" sx={{fontSize:"0.90rem"}}>
-              ○ Reviewed and monitored 90+ residents’ nutritional status,
+              <Typography
+                className="text-[#4d4a48]"
+                sx={{ fontSize: "0.90rem" }}
+              >
+                ○ Reviewed and monitored 90+ residents’ nutritional status,
                 prescribed therapeutic diets, and developed care plans within
                 the long-term nursing and short-term rehabilitation settings
                 <br></br>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   techDetails,
   techDetail1,
@@ -8,22 +8,43 @@ import {
 } from "./techDetails";
 import TechFxn from "./techFxn";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Tech() {
   const desktopScreen = useMediaQuery("(min-width: 640px)");
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="h-full flex flex-col justify-center items-center">
       <section className="w-[75%] h-[16%] sm:h-[15%] flex flex-col justify-evenly items-center">
-        <h1 className="w-full text-3xl sm:text-4xl text-[#4d4a48] font-bold text-center sm:text-end">
+        <h1
+          className="w-full text-3xl sm:text-4xl text-[#4d4a48] font-bold text-center sm:text-end"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-delay="300"
+        >
           Skills
         </h1>
-        <p className="w-full text-lg sm:text-base font-bold text-center sm:text-end">
+        <p
+          className="w-full text-lg sm:text-base font-bold text-center sm:text-end"
+          data-aos="fade-in"
+          data-aos-easing="linear"
+          data-aos-delay="600"
+        >
           Here are some of the technology I have used in my projects.
         </p>
       </section>
       {desktopScreen ? (
-        <section className="w-[75%] h-[75%] flex flex-col items-center">
+        <section
+          className="w-[75%] h-[75%] flex flex-col items-center"
+          data-aos="fade-in"
+          data-aos-easing="linear"
+          data-aos-delay="800"
+        >
           <div className="carousel-container">
             <div className="carousel-track">
               {Object.keys(techDetails).map((detailKey) => {

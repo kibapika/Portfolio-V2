@@ -19,7 +19,6 @@ const Home = () => {
             data-aos="fade-down"
             data-aos-easing="ease-in-sine"
             data-aos-delay="100"
-            // data-aos-offset="0"
           >
             Hi. I'm Eva Li.
           </h1>

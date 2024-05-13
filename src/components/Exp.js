@@ -27,9 +27,12 @@ export default function Exp() {
         data-aos-easing="linear"
         data-aos-delay="300"
       >
-        <h1 className="w-full text-center sm:text-start text-2xl sm:text-4xl mb-6 text-[#4d4a48] font-bold">
-          Professional Experience
-        </h1>
+        <div
+        className="flex justify-center items-center mb-3">
+          <h1 className="w-full h-[3rem] sm:w-[60%] sm:h-[4rem] flex justify-center items-center font-bold text-2xl sm:text-4xl text-[#4d4a48] bg-white bg-opacity-65 rounded-full drop-shadow">
+            Professional Experience
+          </h1>
+        </div>
         <section>
           <Accordion
             expanded={expanded === "panel1"}

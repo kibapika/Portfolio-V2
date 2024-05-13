@@ -27,7 +27,7 @@ const About = () => {
         </section>
         <section className="w-[85%] sm:w-[50%] text-center sm:text-start">
           <h1
-            className="text-2xl sm:text-5xl sm:mb-6 text-[#4d4a48] mb-2 sm:mb-0 font-bold"
+            className="text-2xl sm:text-5xl sm:mb-6 text-[#4d4a48] mb-2 sm:mb-0 font-bold drop-shadow-md"
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-delay="300"

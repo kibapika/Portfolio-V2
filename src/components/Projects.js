@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -12,7 +12,14 @@ import "react-multi-carousel/lib/styles.css";
 
 import { projectDetails } from "./projectDetails";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Projects() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -31,15 +38,30 @@ export default function Projects() {
   return (
     <div className="h-full flex flex-col sm:justify-center items-center">
       <section className="w-[80%] sm:w-[75%] h-[20%] sm:h-[15%] flex flex-col justify-center sm:justify-evenly items-center">
-        <h1 className="w-full text-3xl sm:text-4xl text-[#4d4a48] font-bold text-center mb-4 sm:mb-0 sm:text-start">
+        <h1
+          className="w-full text-3xl sm:text-4xl text-[#4d4a48] font-bold text-center mb-4 sm:mb-0 sm:text-start"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-delay="300"
+        >
           Projects
         </h1>
-        <p className="w-full text-lg sm:text-base font-bold text-center sm:text-start">
+        <p
+          className="w-full text-lg sm:text-base font-bold text-center sm:text-start"
+          data-aos="fade-in"
+          data-aos-easing="linear"
+          data-aos-delay="600"
+        >
           Here is a collection of projects that have done on my own or with a
           team.
         </p>
       </section>
-      <section className="w-[90%] sm:h-[78%] sm:w-[75%]">
+      <section
+        className="w-[90%] sm:h-[78%] sm:w-[75%]"
+        data-aos="fade-in"
+        data-aos-easing="linear"
+        data-aos-delay="800"
+      >
         <Carousel
           additionalTransfrom={0}
           arrows

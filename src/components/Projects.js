@@ -38,14 +38,17 @@ export default function Projects() {
   return (
     <div className="h-full flex flex-col sm:justify-center items-center">
       <section className="w-[80%] sm:w-[75%] h-[20%] sm:h-[15%] flex flex-col justify-center sm:justify-evenly items-center">
-        <h1
-          className="w-full text-3xl sm:text-4xl text-[#4d4a48] font-bold text-center mb-4 sm:mb-0 sm:text-start"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-delay="300"
-        >
-          Projects
-        </h1>
+        <div className="w-full flex justify-center sm:justify-start">
+          <h1
+            className="h-[3.5rem] px-5 text-3xl sm:text-4xl text-[#4d4a48] font-bold flex justify-start items-center bg-white bg-opacity-65 drop-shadow rounded-full"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-delay="300"
+          >
+            Projects
+          </h1>
+        </div>
+
         <p
           className="w-full text-lg sm:text-base font-bold text-center sm:text-start"
           data-aos="fade-in"

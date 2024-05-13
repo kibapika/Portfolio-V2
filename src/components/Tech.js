@@ -23,7 +23,7 @@ export default function Tech() {
       <section className="w-[75%] h-[16%] sm:h-[15%] flex flex-col justify-evenly items-center">
         <div className="w-full flex justify-center sm:justify-end">
           <h1
-          className="h-[3rem] px-6 text-3xl sm:text-4xl text-[#4d4a48] font-bold text-center flex justify-center rounded-full items-center bg-white bg-opacity-65 drop-shadow"
+          className="h-[3rem] px-6 text-3xl sm:text-4xl text-[#4d4a48] font-bold flex justify-center rounded-full items-center bg-white bg-opacity-65 drop-shadow"
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-delay="300"

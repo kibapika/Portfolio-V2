@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import { RiMailSendLine } from "react-icons/ri";
 import { HiArrowLongRight } from "react-icons/hi2";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Contact = () => {
   const desktopScreen = useMediaQuery("(min-width: 640px)");
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="h-[100%] flex flex-col justify-center content-center items-center">
-      <section className="h-[25%] flex flex-col justify-evenly items-center text-center mb-4 sm:mb-8">
+      <section
+        className="h-[25%] flex flex-col justify-evenly items-center text-center mb-4 sm:mb-8"
+        data-aos="fade-in"
+        data-aos-easing="linear"
+        data-aos-delay="300"
+      >
         <h1 className="text-3xl w-[90%] sm:w-[100%] sm:text-4xl font-bold">
           Hope to connect with you!
         </h1>
@@ -23,6 +36,9 @@ const Contact = () => {
         method="get"
         encType="application/x-www-form-urlencoded"
         className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-[75%] sm:w-[55%]"
+        data-aos="fade-in"
+        data-aos-easing="linear"
+        data-aos-delay="300"
       >
         <label>Your Name</label>
         {desktopScreen ? <label>Your E-mail Address</label> : null}

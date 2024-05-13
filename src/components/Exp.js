@@ -21,19 +21,22 @@ export default function Exp() {
 
   return (
     <div className="h-full flex justify-center items-center">
-      <div
-        className="w-[88%] sm:w-[75%]"
-        data-aos="zoom-out"
-        data-aos-easing="linear"
-        data-aos-delay="300"
-      >
+      <div className="w-[88%] sm:w-[75%]">
         <div
-        className="flex justify-center items-center mb-3">
+          className="flex justify-center items-center mb-3"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-delay="300"
+        >
           <h1 className="w-full h-[3rem] sm:w-[60%] sm:h-[4rem] flex justify-center items-center font-bold text-2xl sm:text-4xl text-[#4d4a48] bg-white bg-opacity-65 rounded-full drop-shadow">
             Professional Experience
           </h1>
         </div>
-        <section>
+        <section
+          data-aos="fade-in"
+          data-aos-easing="linear"
+          data-aos-delay="600"
+        >
           <Accordion
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}

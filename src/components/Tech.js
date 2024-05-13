@@ -91,7 +91,12 @@ export default function Tech() {
           </div>
         </section>
       ) : (
-        <section className="w-[100%] h-[53%] flex flex-col items-center">
+        <section
+          className="w-[100%] h-[53%] flex flex-col items-center"
+          data-aos="fade-in"
+          data-aos-easing="linear"
+          data-aos-delay="800"
+        >
           <div className="carousel-container">
             <div className="carousel-track">
               {Object.keys(techDetailsMobile).map((detailKey) => {

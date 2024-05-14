@@ -1,5 +1,5 @@
 // import bx from "../img/bx.png";
-import ecommerce from "../img/ecommercePic.png";
+// import ecommerce from "../img/ecommercePic.png";
 import eve from "../img/evePic.png";
 import mindful from "../img/mindfulPic.png";
 import temps from "../img/tempsPic.png";
@@ -22,7 +22,7 @@ export const projectDetails = [
     tech: ["React ", "Node.js ", "Firebase ", "Tailwind ", "Firestore "],
   },
   {
-    png: ecommerce,
+    // png: ecommerce,
     title: "Soleful - Shoe E-commerce Site ",
     desc: "Recreation of a e-commerce site based on shoes. A CRUD website focusing on React and Javascript.",
     git: "https://github.com/kibapika/Soles",

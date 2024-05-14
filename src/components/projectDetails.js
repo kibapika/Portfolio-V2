@@ -6,7 +6,7 @@ import temps from "../img/tempsPic.png";
 
 export const projectDetails = [
   {
-    png: bx,
+    // png: bx,
     title: "BunnyXpress - Art Portfolio",
     desc: "My small business (BunnyXpress) art portfolio website built with React App and hosted by Netlify. Desktop and mobile friendly!",
     link: "https://bunnyxpress.netlify.app/",

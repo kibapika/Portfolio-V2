@@ -11,7 +11,7 @@ Personal Portfolio Website (Version 2) built with <a href="https://github.com/fa
 </p>
 
 <div align="center">
-<img alt="video1" src="src/video/video1.gif" width="400">
+<img alt="video1" src="src/video/video1.gif" width="500">
 <img alt="video2" src="src/video/video2.gif" width="200">
 </div>
 

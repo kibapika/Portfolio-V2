@@ -2,7 +2,7 @@ import React from "react";
 import TopNav from "./TopNav";
 import { NavLink } from "react-router-dom";
 import Home from "./Home";
-import logo from "../png/logo.png";
+import logo from "../logo.png";
 
 const Header = () => {
   return (

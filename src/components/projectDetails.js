@@ -1,4 +1,4 @@
-import BX from "../img/BX.png";
+import bx from "../img/bx.png";
 import ecommerce from "../img/ecommercePic.png";
 import eve from "../img/evePic.png";
 import mindful from "../img/mindfulPic.png";
@@ -6,7 +6,7 @@ import temps from "../img/tempsPic.png";
 
 export const projectDetails = [
   {
-    png: BX,
+    png: bx,
     title: "BunnyXpress - Art Portfolio",
     desc: "My small business (BunnyXpress) art portfolio website built with React App and hosted by Netlify. Desktop and mobile friendly!",
     link: "https://bunnyxpress.netlify.app/",

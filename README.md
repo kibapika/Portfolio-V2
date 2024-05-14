@@ -1,4 +1,20 @@
+<div align="center">
+  <img alt="Logo" src="src/png/logo.png" width="100" style="border-radius:100%"/>
+</div>
+
+<h1 align="center">
+<a href="https://portfolio-evali.vercel.app/" >Eva Li</a>
+</h1>
+
+<video src="src/video/video1.mov" width="280" alt="video1"></video>
+<video src="src/video/video2.mov" width="100" alt="video1"></video>
+
+<p align="center">
+Personal Portfolio Website (Version 2) built with <a href="https://github.com/facebook/create-react-app">React App</a> and hosted by <a href="https://www.vercel.com/">Vercel</a>.
+</p>
+
 ## Colors
+
 - #f5f4ef
 - #686763
 - #a2a392
@@ -6,10 +22,9 @@
 - #997b66
 - #a5a58d
 - #6b705c
-- #4d4a48
+- #4d4a483
 - #2b2929
 - #972b1a
-
 
 # Getting Started with Create React App
 

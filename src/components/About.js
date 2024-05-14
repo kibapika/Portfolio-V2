@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-import facePic from "../img/evaLi.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -19,7 +18,7 @@ const About = () => {
             data-aos-easing="linear"
             data-aos-delay="300"
           >
-            <img alt="facePic" src={facePic} className="rounded-t-full" />
+            <img alt="facePic" src="evaLi.jpeg" className="rounded-t-full" />
             <div className="w-full h-[3rem] bg-[#687351] flex justify-center items-center text-[#f5f4ef] font-bold text-center">
               <span>"Nice to meet you!"</span>
             </div>

@@ -1,4 +1,4 @@
-import bx from "../img/bx.png";
+// import bx from "../img/bx.png";
 import ecommerce from "../img/ecommercePic.png";
 import eve from "../img/evePic.png";
 import mindful from "../img/mindfulPic.png";

@@ -6,29 +6,39 @@
 <a href="https://portfolio-evali.vercel.app/" >Eva Li</a>
 </h1>
 
-<video src="src/video/video1.mov" width="280" alt="video1"></video>
-<video src="src/video/video2.mov" width="100" alt="video1"></video>
-
 <p align="center">
 Personal Portfolio Website (Version 2) built with <a href="https://github.com/facebook/create-react-app">React App</a> and hosted by <a href="https://www.vercel.com/">Vercel</a>.
 </p>
 
+<div align="center">
+<video src="src/video/video1.mov" width="400" alt="video1"></video>
+<video src="src/video/video2.mov" width="150" alt="video1"></video></div>
+
+Built with ...
+
+- React
+- Javascript
+- Tailwind
+- fslightbox
+- CSS
+- Netlify
+
 ## Colors
 
-- #f5f4ef
-- #686763
-- #a2a392
-- #d08c60
-- #997b66
-- #a5a58d
-- #6b705c
-- #4d4a483
-- #2b2929
-- #972b1a
+- ![#f5f4ef](https://placehold.co/15x15/f5f4ef/f5f4ef.png) `#f5f4ef`
+- ![#686763](https://placehold.co/15x15/686763/686763.png) `#686763`
+- ![#a2a392](https://placehold.co/15x15/a2a392/a2a392.png) `#a2a392`
+- ![#d08c60](https://placehold.co/15x15/d08c60/d08c60.png) `#d08c60`
+- ![#997b66](https://placehold.co/15x15/997b66/997b66.png) `#997b66`
+- ![#a5a58d](https://placehold.co/15x15/a5a58d/a5a58d.png) `#a5a58d`
+- ![#6b705c](https://placehold.co/15x15/6b705c/6b705c.png) `#6b705c`
+- ![#d4a483](https://placehold.co/15x15/d4a483/d4a483.png) `#d4a483`
+- ![#2b2929](https://placehold.co/15x15/2b2929/2b2929.png) `#2b2929`
+- ![#972b1a](https://placehold.co/15x15/972b1a/972b1a.png) `#972b1a`
 
-# Getting Started with Create React App
+## Font
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Shippori Mincho
 
 ## Available Scripts
 
@@ -57,42 +67,8 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -62,7 +62,7 @@ export const techDetail1 = {
   },
   11: {
     png: vercel,
-    title: "vervel",
+    title: "vercel",
   },
   12: {
     png: netlify,
@@ -125,7 +125,7 @@ export const techDetailsMobile2 = {
   },
   24: {
     png: vercel,
-    title: "vervel",
+    title: "vercel",
   },
   25: {
     png: netlify,

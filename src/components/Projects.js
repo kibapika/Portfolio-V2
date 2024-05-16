@@ -108,10 +108,10 @@ export default function Projects() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button href={details.git}>
+                <Button href={details.git} target="_blank" rel="noreferrer">
                   <FiGithub className="text-xl" />
                 </Button>
-                <Button href={details.link}>
+                <Button href={details.link} target="_blank" rel="noreferrer">
                   <FiExternalLink className="text-xl" />
                 </Button>
               </CardActions>

@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">
-<a href="https://portfolio-evali.vercel.app/" >Eva Li</a>
+<a href="https://main-portfolio-evali.vercel.app/" >Eva Li</a>
 </h1>
 
 <p align="center">

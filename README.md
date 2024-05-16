@@ -10,12 +10,12 @@
 Personal Portfolio Website (Version 2) built with <a href="https://github.com/facebook/create-react-app">React App</a> and hosted by <a href="https://www.vercel.com/">Vercel</a>.
 </p>
 
-<div style="display:flex; flex-direction:column; align-items: center">
+<div align="center" style="display:flex; flex-direction:column; align-items: center">
 <span>Desktop Ver.</span>
 <img alt="video1" src="src/video/video1.gif" width="500">
 </div>
 
-<div style="display:flex; flex-direction:column; align-items: center">
+<div align="center" style="display:flex; flex-direction:column; align-items: center">
 <span>Mobile Ver.</span>
 <img alt="video2" src="src/video/video2.gif" width="225">
 </div>

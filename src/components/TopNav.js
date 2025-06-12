@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
-import resume from "../img/resume.pdf";
+import resume from "../img/resumeV2.pdf";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Menu, Transition } from "@headlessui/react";
 import { BsJustify } from "react-icons/bs";
@@ -26,7 +26,7 @@ const TopNav = () => {
       {desktopScreen ? (
         <div className="text-[1.1rem]">
           <a href={resume} target="_blank" rel="noreferrer">
-            <button className="w-[8rem] border-2 rounded-md px-3 py-1.5 flex flex-row justify-evenly items-center cursor-point drop-shadow hover:bg-[#a2a392] hover:border-[#4d4a48] hover:text-[#4d4a48] hover:bg-opacity-65 hover:duration-20 hover:font-bold">
+            <button className="w-[8rem] border-2 rounded-md px-3 py-1.5 flex flex-row justify-evenly items-center cursor-point drop-shadow transition-hover duration-150 hover:bg-[#a2a392] hover:border-[#4d4a48] hover:text-[#4d4a48] hover:bg-opacity-65 hover:font-bold">
               <BsFileEarmarkText />
               <span>Resume</span>
             </button>
@@ -36,7 +36,7 @@ const TopNav = () => {
         <div className="w-[8rem] flex flex-row justify-between">
           <div className="text-[1.1rem]">
             <a href={resume}>
-              <button className="border-2 text-[2rem] rounded-md px-3 py-1.5 flex flex-row justify-evenly items-center bg-[#f5f4ef] cursor-point text-[#4d4a48] hover:bg-[#FCA311] hover:border-[#6b705c] hover:text-[#6b705c] hover:bg-opacity-15 hover:duration-200">
+              <button className="border-2 text-[2rem] rounded-md px-3 py-1.5 flex flex-row justify-evenly items-center bg-[#f5f4ef] cursor-point text-[#4d4a48] transition-hover duration-150 hover:bg-[#FCA311] hover:border-[#6b705c] hover:text-[#6b705c] hover:bg-opacity-15">
                 <BsFileEarmarkText />
               </button>
             </a>

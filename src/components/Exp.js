@@ -37,6 +37,52 @@ export default function Exp() {
           data-aos-easing="linear"
           data-aos-delay="600"
         >
+          {/* ---------------------------------------------------- */}
+          <Accordion
+            expanded={expanded === "panel0"}
+            onChange={handleChange("panel0")}
+          >
+            <AccordionSummary
+              expandIcon={<BsChevronDown />}
+              aria-controls="panel0bh-content"
+              id="panel0bh-header"
+              className="sm:h-[3.25rem]"
+              sx={{ backgroundColor: "#f5f4ef" }}
+            >
+              <Typography
+                className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start"
+                sx={{ fontSize: { md: "1.125rem" }, lineHeight: "1.75rem" }}
+              >
+                Front-End Developer | Sui Hackathon
+              </Typography>
+              <Typography
+                sx={{ color: "text.secondary", lineHeight: "1.75rem" }}
+              >
+                2025
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography
+                className="text-[#4d4a48]"
+                sx={{ fontSize: "0.90rem" }}
+              >
+                ○ Developed a full-stack puzzle game combining daily challenges
+                with Web3-powered creature collection and trading, built as a
+                team of 4 for the Sui Hackathon
+                <br></br>
+                <br></br>○ Facilitated twice-weekly team meetings to coordinate
+                development progress and align on project goals
+                <br></br>
+                <br></br>○ Designed core gameplay systems (e.g., hunger,
+                evolution, shard generation) with real-time updates and
+                scheduled tasks
+                <br></br>
+                <br></br>○ Built a responsive UI using React, TailwindCSS, and
+                PhaserJS, with dynamic routing via React Router DOM
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          {/* ---------------------------------------------------- */}
           <Accordion
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}
@@ -75,6 +121,7 @@ export default function Exp() {
               </Typography>
             </AccordionDetails>
           </Accordion>
+          {/* ---------------------------------------------------- */}
           <Accordion
             expanded={expanded === "panel2"}
             onChange={handleChange("panel2")}
@@ -121,6 +168,7 @@ export default function Exp() {
               </Typography>
             </AccordionDetails>
           </Accordion>
+          {/* ---------------------------------------------------- */}
           <Accordion
             expanded={expanded === "panel3"}
             onChange={handleChange("panel3")}

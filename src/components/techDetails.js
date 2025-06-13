@@ -11,6 +11,8 @@ import tail from "../png/tailwind.svg";
 import vercel from "../png/vercel.png";
 import netlify from "../png/netlify.png";
 import boot from "../png/boot.png";
+import phaser from "../png/phaser.png";
+import vite from "../png/vite.png";
 
 export const techDetails = {
   0: {
@@ -41,93 +43,109 @@ export const techDetails = {
     png: psql,
     title: "psql",
   },
+  7: {
+    png: phaser,
+    title:"phaser"
+  },
 };
 
 export const techDetail1 = {
-  7: {
+  8: {
     png: react,
     title: "react",
   },
-  8: {
+  9: {
     png: sql,
     title: "sql",
   },
-  9: {
+  10: {
     png: tail,
     title: "tail",
   },
-  10: {
+  11: {
     png: boot,
     title: "boot",
   },
-  11: {
+  12: {
     png: vercel,
     title: "vercel",
   },
-  12: {
+  13: {
     png: netlify,
     title: "netlify",
-  }
+  },
+  14: {
+    png: vite,
+    title: "vite"
+  },
 };
 
 // mobile data
 
 export const techDetailsMobile = {
-  13: {
+  15: {
     png: css3,
     title: "css3",
   },
-  14: {
+  16: {
     png: firebase,
     title: "firebase",
   },
-  15: {
+  17: {
     png: github,
     title: "github",
   },
-  16: {
+  18: {
     png: html,
     title: "html",
+  },
+  19: {
+    png: phaser,
+    title:"phaser"
   },
 };
 
 export const techDetailsMobile1 = {
-  17: {
+  20: {
     png: js,
     title: "js",
   },
-  18: {
+  21: {
     png: node,
     title: "node",
   },
-  19: {
+  22: {
     png: psql,
     title: "psql",
   },
-  20: {
+  23: {
     png: react,
     title: "react",
   },
-  21: {
+  24: {
     png: sql,
     title: "sql",
-  }
+  },
+  25: {
+    png: vite,
+    title: "vite"
+  },
 };
 
 export const techDetailsMobile2 = {
-  22: {
+  26: {
     png: tail,
     title: "tail",
   },
-  23: {
+  27: {
     png: boot,
     title: "boot",
   },
-  24: {
+  28: {
     png: vercel,
     title: "vercel",
   },
-  25: {
+  29: {
     png: netlify,
     title: "netlify",
   }

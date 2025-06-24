@@ -67,7 +67,7 @@ function App() {
         <section id="tech" className="h-[100dvh]">
           <Tech />
         </section>
-        <section id="projects" className="h-[100dvh]">
+        <section id="projects" className="h-[145dvh]">
           <Projects />
         </section>
         <section id="contact" className="h-[90dvh]">

@@ -10,7 +10,7 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import { projectDetails } from "./projectDetails";
+import { projectDetails, showcase } from "./projectDetails";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -60,11 +60,35 @@ export default function Projects() {
         </p>
       </section>
       <section
-        className="w-[90%] sm:h-[78%] sm:w-[75%]"
         data-aos="fade-in"
         data-aos-easing="linear"
         data-aos-delay="800"
+        className="flex flex-col items-center w-[75%]"
       >
+        <Card className="w-[50%] h-[37rem] sm:h-[28rem] mb-[20px]">
+          <CardMedia
+            className="h-[30%] sm:h-[50%]"
+            image={showcase.png}
+            title={showcase.title}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {showcase.title}
+            </Typography>
+            <Typography variant="body2">{showcase.desc}</Typography>
+            <Typography sx={{ mt: 1.5 }} color="text.secondary">
+              {showcase.tech}
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button href={showcase.git} target="_blank" rel="noreferrer">
+              <FiGithub className="text-xl" />
+            </Button>
+            <Button href={showcase.link} target="_blank" rel="noreferrer">
+              <FiExternalLink className="text-xl" />
+            </Button>
+          </CardActions>
+        </Card>
         <Carousel
           additionalTransfrom={0}
           arrows

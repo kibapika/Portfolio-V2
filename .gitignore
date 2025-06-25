@@ -22,7 +22,6 @@ yarn-error.log*
 
 
 #img
-src/img
-src/png
-src/video
+src/img/
+src/png/
 logo.png

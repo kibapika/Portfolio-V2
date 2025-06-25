@@ -68,7 +68,13 @@ export default function Projects() {
         <Card className="w-[50%] h-[37rem] sm:h-[28rem] mb-[20px]">
           <CardMedia
             className="h-[30%] sm:h-[50%]"
-            image={showcase.png}
+            component="video"
+            src={showcase.vid}
+            // controls
+            autoPlay
+            muted
+            loop
+            // image={showcase.png}
             title={showcase.title}
           />
           <CardContent>

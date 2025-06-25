@@ -42,7 +42,7 @@ export default function Tech() {
       </section>
       {desktopScreen ? (
         <section
-          className="w-[75%] h-[75%] flex flex-col items-center"
+          className="w-[75%] h-[75%] flex flex-col items-center justify-evenly"
           data-aos="fade-in"
           data-aos-easing="linear"
           data-aos-delay="800"
@@ -94,7 +94,7 @@ export default function Tech() {
         </section>
       ) : (
         <section
-          className="w-[100%] h-[53%] flex flex-col items-center"
+          className="w-[100%] h-[53%] flex flex-col items-center justify-evenly"
           data-aos="fade-in"
           data-aos-easing="linear"
           data-aos-delay="800"

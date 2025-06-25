@@ -50,12 +50,13 @@ export default function Exp() {
               sx={{ backgroundColor: "#f5f4ef" }}
             >
               <Typography
-                className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start"
+                className="w-[80%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start"
                 sx={{ fontSize: { md: "1.125rem" }, lineHeight: "1.75rem" }}
               >
                 Front-End Developer | Sui Hackathon
               </Typography>
               <Typography
+              className="w-[15%]"
                 sx={{ color: "text.secondary", lineHeight: "1.75rem" }}
               >
                 2025
@@ -95,7 +96,7 @@ export default function Exp() {
               sx={{ backgroundColor: "#dfddca" }}
             >
               <Typography
-                className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start"
+                className="w-[80%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start"
                 sx={{ fontSize: { md: "1.125rem" }, lineHeight: "1.75rem" }}
               >
                 Student | Fullstack Academy
@@ -134,7 +135,7 @@ export default function Exp() {
               sx={{ backgroundColor: "#b7bd9e" }}
             >
               <Typography
-                className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start"
+                className="w-[80%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start"
                 sx={{ fontSize: { md: "1.125rem" }, lineHeight: "1.75rem" }}
               >
                 Registered Dietitian | Family Residences and Essential
@@ -181,7 +182,7 @@ export default function Exp() {
               sx={{ backgroundColor: "#798a6e" }}
             >
               <Typography
-                className="w-[85%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start"
+                className="w-[80%] sm:w-[85%] text-[#4d4a48] text-center sm:text-start"
                 sx={{ fontSize: { md: "1.125rem" }, lineHeight: "1.75rem" }}
               >
                 Registered Dietitian | The Pavilion at Queens for Rehabilitation

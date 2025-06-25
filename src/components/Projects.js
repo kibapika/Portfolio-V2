@@ -37,7 +37,7 @@ export default function Projects() {
 
   return (
     <div className="h-full flex flex-col sm:justify-center items-center">
-      <section className="w-[80%] sm:w-[75%] h-[20%] sm:h-[15%] flex flex-col justify-center sm:justify-evenly items-center">
+      <section className="w-[80%] sm:w-[75%] h-[13%] sm:h-[15%] flex flex-col justify-center sm:justify-evenly items-center">
         <div className="w-full flex justify-center sm:justify-start">
           <h1
             className="h-[3.5rem] px-5 text-3xl sm:text-4xl text-[#4d4a48] font-bold flex justify-start items-center bg-white bg-opacity-65 drop-shadow rounded-full"
@@ -63,11 +63,11 @@ export default function Projects() {
         data-aos="fade-in"
         data-aos-easing="linear"
         data-aos-delay="800"
-        className="flex flex-col items-center w-[75%]"
+        className="flex flex-col items-center w-[100%] sm:w-[75%]"
       >
-        <Card className="w-[50%] h-[37rem] sm:h-[28rem] mb-[20px]">
+        <Card className="w-[100%] sm:w-[50%] h-[30rem] sm:h-[28rem] mb-[20px]">
           <CardMedia
-            className="h-[30%] sm:h-[50%]"
+            className="h-[50%] sm:h-[50%]"
             component="video"
             src={showcase.vid}
             // controls
@@ -124,7 +124,7 @@ export default function Projects() {
           {projectDetails.map((details) => (
             <Card className="w-full h-[37rem] sm:h-[28rem]" key={details.title}>
               <CardMedia
-                className="h-[30%] sm:h-[50%]"
+                className="h-[35%] sm:h-[50%]"
                 image={details.png}
                 title={details.title}
               />

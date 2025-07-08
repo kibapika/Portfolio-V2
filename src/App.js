@@ -15,7 +15,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SideNav from "./components/SideNav";
 import STA from "./components/STA";
-import blueStack from "./img/blueStack.jpg";
+import blueStack from "./img/blue.jpg";
 
 function fadeOutOnScroll(element) {
   if (!element || element.length === 0) {

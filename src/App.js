@@ -15,7 +15,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SideNav from "./components/SideNav";
 import STA from "./components/STA";
-import bluestack from "./img/bluestack.jpg";
+import blueStack from "./img/blueStack.jpg";
 
 function fadeOutOnScroll(element) {
   if (!element || element.length === 0) {
@@ -53,7 +53,7 @@ function App() {
         <section
           id="home"
           className="background h-[100dvh] justify-center bg-no-repeat bg-cover bg-center"
-          style={{ backgroundImage: `url(${bluestack})` }}
+          style={{ backgroundImage: `url(${blueStack})` }}
         >
           <Header />
         </section>

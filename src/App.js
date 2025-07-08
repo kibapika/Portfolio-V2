@@ -15,7 +15,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SideNav from "./components/SideNav";
 import STA from "./components/STA";
-import bg from "./img/bg.jpg";
+// import bg from "./img/bg.jpg";
 
 function fadeOutOnScroll(element) {
   if (!element || element.length === 0) {
@@ -53,7 +53,7 @@ function App() {
         <section
           id="home"
           className="background h-[100dvh] justify-center bg-no-repeat bg-cover bg-center"
-          style={{ backgroundImage: `url(${bg})` }}
+          // style={{ backgroundImage: `url(${bg})` }}
         >
           <Header />
         </section>
